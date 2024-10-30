@@ -183,3 +183,5 @@ metadata/_edit_group_ = true
 libraries = {
 "": SubResource("AnimationLibrary_ynvxf")
 }
+
+[node name="Timer" type="Timer" parent="."]
