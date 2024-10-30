@@ -183,6 +183,3 @@ metadata/_edit_group_ = true
 libraries = {
 "": SubResource("AnimationLibrary_ynvxf")
 }
-
-[node name="TileMap" type="TileMap" parent="."]
-format = 2
