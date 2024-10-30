@@ -184,4 +184,5 @@ libraries = {
 "": SubResource("AnimationLibrary_ynvxf")
 }
 
-[node name="Timer" type="Timer" parent="."]
+[node name="TileMap" type="TileMap" parent="."]
+format = 2
