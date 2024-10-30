@@ -75,3 +75,4 @@ func AnimDirection() -> String:
 		return "right"
 	else:
 		return "left"
+# this is a test text to see if the commit is working

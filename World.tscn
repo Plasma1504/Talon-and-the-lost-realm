@@ -169,15 +169,15 @@ _data = {
 position = Vector2(104, 53)
 script = ExtResource("3_yxn8m")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Fox_Player"]
-position = Vector2(-1, 6)
-shape = SubResource("CapsuleShape2D_3xffe")
-metadata/_edit_group_ = true
-
 [node name="Sprite2D" type="Sprite2D" parent="Fox_Player"]
 texture = ExtResource("3_jeuqg")
 hframes = 60
 frame = 18
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Fox_Player"]
+position = Vector2(-1, 6)
+shape = SubResource("CapsuleShape2D_3xffe")
+metadata/_edit_group_ = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Fox_Player"]
 libraries = {
