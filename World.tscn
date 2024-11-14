@@ -683,3 +683,5 @@ metadata/_edit_group_ = true
 libraries = {
 "": SubResource("AnimationLibrary_ynvxf")
 }
+
+[node name="Camera2D" type="Camera2D" parent="Fox_Player"]
