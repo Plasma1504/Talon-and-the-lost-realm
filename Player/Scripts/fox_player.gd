@@ -5,6 +5,12 @@ var direction : Vector2 = Vector2.ZERO
 var move_speed : float = 100.0
 var state : String = "idle"
 
+enum {
+	MOVE,
+	ROLL,
+	ATTACK,
+}
+
 @onready var animation_player : AnimationPlayer = $AnimationPlayer
 @onready var sprite : Sprite2D = $Sprite2D
 
