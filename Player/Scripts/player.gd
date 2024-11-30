@@ -1,40 +1,31 @@
-extends CharacterBody2D
+class_name Player extends CharacterBody2D
 
 var cardinal_direction : Vector2 = Vector2.DOWN
 var direction : Vector2 = Vector2.ZERO
-var move_speed : float = 100.0
-var state : String = "idle"
 
-enum {
-	MOVE,
-	ROLL,
-	ATTACK,
-}
 
 @onready var animation_player : AnimationPlayer = $AnimationPlayer
 @onready var sprite : Sprite2D = $Sprite2D
+@onready var state_machine : PlayerStateMachine = $StateMachine
 
 func _ready():
+	state_machine.Initialize(self)
 	pass
 
 func _process(delta):
 	# Get input direction
 	direction.x = Input.get_action_strength("right") - Input.get_action_strength("left")
 	direction.y = Input.get_action_strength("down") - Input.get_action_strength("up")
-	
-	# Update velocity
-	velocity = direction * move_speed
-	
-	# Update animation state and direction
-	if SetState() or SetDirection():
-		UpdateAnimation()
-		# Debug print to see what's happening
-		print("Direction: ", direction)
-		print("Cardinal Direction: ", cardinal_direction)
-		print("State: ", state)
+	pass
+
+
+
 
 func _physics_process(delta):
 	move_and_slide()
+
+
+
 
 func SetDirection() -> bool:
 	var new_dir : Vector2 = cardinal_direction
@@ -58,17 +49,15 @@ func SetDirection() -> bool:
 	cardinal_direction = new_dir
 	return true
 
-func SetState() -> bool:
-	var new_state : String = "idle" if direction == Vector2.ZERO else "run"
-	if new_state == state:
-		return false
-	state = new_state
-	return true
 
-func UpdateAnimation() -> void:
+
+
+func UpdateAnimation( state : String) -> void:
 	var anim_name = state + "_" + AnimDirection()
 	print("Playing animation: " + anim_name)  # Debug print
 	animation_player.play(anim_name)
+
+
 
 func AnimDirection() -> String:
 	if cardinal_direction == Vector2.DOWN:
