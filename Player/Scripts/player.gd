@@ -26,29 +26,22 @@ func _physics_process(delta):
 
 
 
-
 func SetDirection() -> bool:
 	var new_dir : Vector2 = cardinal_direction
-	
 	if direction == Vector2.ZERO:
 		return false
-	
-	# Determine direction with priority to horizontal movement
-	if direction.x < 0:
-		new_dir = Vector2.LEFT
-	elif direction.x > 0:
-		new_dir = Vector2.RIGHT
-	elif direction.y < 0:
-		new_dir = Vector2.UP
-	elif direction.y > 0:
-		new_dir = Vector2.DOWN
+		
+	if direction.y == 0:
+		new_dir = Vector2.LEFT if direction.x < 0 else Vector2.RIGHT
+	elif direction.x ==0:
+		new_dir = Vector2.UP if direction.y < 0 else Vector2.DOWN
 	
 	if new_dir == cardinal_direction:
 		return false
 	
 	cardinal_direction = new_dir
+	sprite.scale.x = -1 if cardinal_direction ==Vector2.LEFT else 1
 	return true
-
 
 
 
