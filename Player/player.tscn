@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://cooxas2d1guhx"]
+[gd_scene load_steps=27 format=3 uid="uid://cooxas2d1guhx"]
 
 [ext_resource type="Script" path="res://Player/Scripts/player.gd" id="1_avjdp"]
 [ext_resource type="Texture2D" uid="uid://dmyweya2pgjjt" path="res://Player/Player.png" id="2_d8r70"]
@@ -6,6 +6,7 @@
 [ext_resource type="Script" path="res://Player/Scripts/state_idle.gd" id="4_kiinl"]
 [ext_resource type="Script" path="res://Player/Scripts/state_walk.gd" id="5_wr3m2"]
 [ext_resource type="Script" path="res://Player/Scripts/state_attack.gd" id="6_dugld"]
+[ext_resource type="Script" path="res://Player/Scripts/state_dodge.gd" id="7_as84h"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3xffe"]
 radius = 5.0
@@ -88,6 +89,70 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 1,
 "values": [28, 29, 30, 31]
+}
+
+[sub_resource type="Animation" id="Animation_g1l4u"]
+resource_name = "dodge_down"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [55, 56, 57, 58, 59]
+}
+
+[sub_resource type="Animation" id="Animation_74f5t"]
+resource_name = "dodge_left"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [50, 51, 52, 53, 54]
+}
+
+[sub_resource type="Animation" id="Animation_5nmu6"]
+resource_name = "dodge_right"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [40, 41, 42, 43, 44]
+}
+
+[sub_resource type="Animation" id="Animation_di3lg"]
+resource_name = "dodge_up"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [45, 46, 47, 48, 49]
 }
 
 [sub_resource type="Animation" id="Animation_qipmv"]
@@ -241,6 +306,10 @@ _data = {
 "attack_left": SubResource("Animation_3wthv"),
 "attack_right": SubResource("Animation_c5k18"),
 "attack_up": SubResource("Animation_uan71"),
+"dodge_down": SubResource("Animation_g1l4u"),
+"dodge_left": SubResource("Animation_74f5t"),
+"dodge_right": SubResource("Animation_5nmu6"),
+"dodge_up": SubResource("Animation_di3lg"),
 "idle_down": SubResource("Animation_qipmv"),
 "idle_left": SubResource("Animation_hyulo"),
 "idle_right": SubResource("Animation_rvkew"),
@@ -283,3 +352,6 @@ script = ExtResource("5_wr3m2")
 
 [node name="Attack" type="Node" parent="StateMachine"]
 script = ExtResource("6_dugld")
+
+[node name="Dodge" type="Node" parent="StateMachine"]
+script = ExtResource("7_as84h")

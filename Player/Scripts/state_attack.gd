@@ -7,6 +7,7 @@ var attacking : bool = false
 @onready var walk : State = $"../Walk"
 @onready var animation_player: AnimationPlayer = $"../../AnimationPlayer"
 @onready var idle: State_Idle = $"../Idle"
+@onready var dodge: State_Dodge = $"../Dodge"
 
 
 
