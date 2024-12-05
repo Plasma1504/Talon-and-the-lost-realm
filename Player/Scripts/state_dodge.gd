@@ -1,7 +1,7 @@
 class_name State_Dodge extends State
 
-@export_range(50, 500, 10) var dodge_speed : float = 200.0
-@export_range(0.1, 2.0, 0.1) var dodge_duration : float = 0.3
+@export_range(50, 500, 10) var dodge_speed : float = 160.0
+@export_range(0.1, 2.0, 0.1) var dodge_duration : float = 0.5
 
 var dodge_time : float = 0.0
 var dodge_direction : Vector2 = Vector2.ZERO
@@ -24,9 +24,12 @@ func Enter() -> void:
 	elif dodge_direction == Vector2.RIGHT:
 		animation_player.play("dodge_right")
 	else:
-		# Fallback for cases where no direction is set
-		animation_player.play("dodge_down")
-	
+		# Für diagonale Bewegungen: Bestimme horizontalen Anteil
+		if dodge_direction.x > 0:
+			animation_player.play("dodge_right")
+		elif dodge_direction.x < 0:
+			animation_player.play("dodge_left")
+
 	player.velocity = dodge_direction * dodge_speed
 
 ## What happens when the player exits this state?
