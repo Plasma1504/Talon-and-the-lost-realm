@@ -13,7 +13,7 @@ config_version=5
 config/name="Talon and the lost realm"
 run/main_scene="res://World.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="res://Logo/icon.svg"
 
 [display]
 
@@ -101,7 +101,7 @@ dodge={
 [layer_names]
 
 2d_physics/layer_1="Player"
-2d_physics/layer_5="Walls"
+2d_physics/layer_5="Colli"
 
 [rendering]
 

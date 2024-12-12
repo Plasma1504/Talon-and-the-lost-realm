@@ -1,9 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://bc7efvbardmu5"]
-
-[sub_resource type="TileSet" id="TileSet_8iumn"]
-tile_size = Vector2i(32, 32)
-
-[node name="Background" type="TileMap"]
-z_index = -1
-tile_set = SubResource("TileSet_8iumn")
-format = 2
