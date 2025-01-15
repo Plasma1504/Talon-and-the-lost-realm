@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bplvd10e48bk2"
-path="res://.godot/imported/TX Tileset Wall.png-9f6559893a7249195f00cd185b00faa0.ctex"
+uid="uid://oug6dgjntq22"
+path="res://.godot/imported/atlas_walls_low-16x16.png-56555ed2208c7ac968953063f6ba7d5a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Spawn Map/fishing_free/fishing_free/Pixel Art Top Down - Basic v1.1.2/Texture/TX Tileset Wall.png"
-dest_files=["res://.godot/imported/TX Tileset Wall.png-9f6559893a7249195f00cd185b00faa0.ctex"]
+source_file="res://Spawn Map/atlas_walls_low-16x16.png"
+dest_files=["res://.godot/imported/atlas_walls_low-16x16.png-56555ed2208c7ac968953063f6ba7d5a.ctex"]
 
 [params]
 

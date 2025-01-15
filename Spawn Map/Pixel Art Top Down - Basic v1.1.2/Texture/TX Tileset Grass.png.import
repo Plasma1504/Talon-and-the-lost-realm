@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bp326ld8galc0"
-path="res://.godot/imported/TX Player.png-4301e7619d3b8b8c7b4235e910a8e9cd.ctex"
+uid="uid://c6tcrlop5q26f"
+path="res://.godot/imported/TX Tileset Grass.png-5d29a0ded11373544b04993e47bdaaa2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Spawn Map/fishing_free/fishing_free/Pixel Art Top Down - Basic v1.1.2/Texture/TX Player.png"
-dest_files=["res://.godot/imported/TX Player.png-4301e7619d3b8b8c7b4235e910a8e9cd.ctex"]
+source_file="res://Spawn Map/Pixel Art Top Down - Basic v1.1.2/Texture/TX Tileset Grass.png"
+dest_files=["res://.godot/imported/TX Tileset Grass.png-5d29a0ded11373544b04993e47bdaaa2.ctex"]
 
 [params]
 
