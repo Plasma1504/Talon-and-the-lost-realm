@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bplvd10e48bk2"
-path="res://.godot/imported/TX Tileset Wall.png-af1defb99ffae86916824d9d19f97298.ctex"
+uid="uid://oug6dgjntq22"
+path="res://.godot/imported/atlas_walls_low-16x16.png-9e1736b994dac53e24d01d119ec19121.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Spawn Map/Pixel Art Top Down - Basic v1.1.2/Texture/TX Tileset Wall.png"
-dest_files=["res://.godot/imported/TX Tileset Wall.png-af1defb99ffae86916824d9d19f97298.ctex"]
+source_file="res://Assets/Dungenon/atlas_walls_low-16x16.png"
+dest_files=["res://.godot/imported/atlas_walls_low-16x16.png-9e1736b994dac53e24d01d119ec19121.ctex"]
 
 [params]
 

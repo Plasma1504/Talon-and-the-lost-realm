@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b4e8dim8a5d47"
-path="res://.godot/imported/TX Plant.png-fe3df3f05b9f6b362db4fc22e0f2d877.ctex"
+uid="uid://dux65m42i54iq"
+path="res://.godot/imported/TX Tileset Stone Ground.png-55b82cd953185ea8642c642a3689dda2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Spawn Map/Pixel Art Top Down - Basic v1.1.2/Texture/TX Plant.png"
-dest_files=["res://.godot/imported/TX Plant.png-fe3df3f05b9f6b362db4fc22e0f2d877.ctex"]
+source_file="res://Assets/Pixel Art Top Down - Basic v1.1.2/Texture/TX Tileset Stone Ground.png"
+dest_files=["res://.godot/imported/TX Tileset Stone Ground.png-55b82cd953185ea8642c642a3689dda2.ctex"]
 
 [params]
 

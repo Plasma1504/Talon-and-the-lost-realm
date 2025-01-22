@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bp326ld8galc0"
-path="res://.godot/imported/TX Player.png-e6b850bdc080aa28df8e61d2f02c1420.ctex"
+uid="uid://c6tcrlop5q26f"
+path="res://.godot/imported/TX Tileset Grass.png-688f97360060b338a8c632cd8e386188.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Spawn Map/Pixel Art Top Down - Basic v1.1.2/Texture/TX Player.png"
-dest_files=["res://.godot/imported/TX Player.png-e6b850bdc080aa28df8e61d2f02c1420.ctex"]
+source_file="res://Assets/Pixel Art Top Down - Basic v1.1.2/Texture/TX Tileset Grass.png"
+dest_files=["res://.godot/imported/TX Tileset Grass.png-688f97360060b338a8c632cd8e386188.ctex"]
 
 [params]
 

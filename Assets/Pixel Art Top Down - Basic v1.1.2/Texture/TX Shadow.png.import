@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dptom53tp6ro0"
-path="res://.godot/imported/House-Path-Tree.png-9c4d4d654fec47c6c43c8881cbeb48d3.ctex"
+uid="uid://dwcj5hx15ijj"
+path="res://.godot/imported/TX Shadow.png-e0307dffe79f6b8babe756e5a9aedcc7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Spawn Map/House-Path-Tree.png"
-dest_files=["res://.godot/imported/House-Path-Tree.png-9c4d4d654fec47c6c43c8881cbeb48d3.ctex"]
+source_file="res://Assets/Pixel Art Top Down - Basic v1.1.2/Texture/TX Shadow.png"
+dest_files=["res://.godot/imported/TX Shadow.png-e0307dffe79f6b8babe756e5a9aedcc7.ctex"]
 
 [params]
 

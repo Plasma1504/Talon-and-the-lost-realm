@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c7c54glm38w2l"
-path="res://.godot/imported/TX Struct.png-288279c453e94912e0cbfd1886e4682d.ctex"
+uid="uid://cr00rydhmyhil"
+path="res://.godot/imported/global.png-cb001b53bc96dfd236edb182e1de11b3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Spawn Map/Pixel Art Top Down - Basic v1.1.2/Texture/TX Struct.png"
-dest_files=["res://.godot/imported/TX Struct.png-288279c453e94912e0cbfd1886e4682d.ctex"]
+source_file="res://Assets/Dungenon/global.png"
+dest_files=["res://.godot/imported/global.png-cb001b53bc96dfd236edb182e1de11b3.ctex"]
 
 [params]
 

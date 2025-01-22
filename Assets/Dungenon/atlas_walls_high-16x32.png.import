@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cr00rydhmyhil"
-path="res://.godot/imported/global.png-e4601d64bb1f5a8a9760ca0ec03ec925.ctex"
+uid="uid://dx5owjrumcmwn"
+path="res://.godot/imported/atlas_walls_high-16x32.png-d87765c075c3080251f45c849b21f6b4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Spawn Map/global.png"
-dest_files=["res://.godot/imported/global.png-e4601d64bb1f5a8a9760ca0ec03ec925.ctex"]
+source_file="res://Assets/Dungenon/atlas_walls_high-16x32.png"
+dest_files=["res://.godot/imported/atlas_walls_high-16x32.png-d87765c075c3080251f45c849b21f6b4.ctex"]
 
 [params]
 

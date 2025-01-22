@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dx5owjrumcmwn"
-path="res://.godot/imported/atlas_walls_high-16x32.png-83bec8fe399ce24ca724b802f895e81a.ctex"
+uid="uid://dt43vn2n7ynqc"
+path="res://.godot/imported/TX Props.png-373d9188b886c4b888daf0ff28fee835.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Spawn Map/atlas_walls_high-16x32.png"
-dest_files=["res://.godot/imported/atlas_walls_high-16x32.png-83bec8fe399ce24ca724b802f895e81a.ctex"]
+source_file="res://Assets/Pixel Art Top Down - Basic v1.1.2/Texture/TX Props.png"
+dest_files=["res://.godot/imported/TX Props.png-373d9188b886c4b888daf0ff28fee835.ctex"]
 
 [params]
 
