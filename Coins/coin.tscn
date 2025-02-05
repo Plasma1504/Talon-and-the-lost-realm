@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://hfe1bw0n7ina"]
+
+[ext_resource type="Texture2D" uid="uid://dr6x7rvyh8gsr" path="res://Coins/MonedaD.png" id="1_iyf1w"]
+
+[node name="Coin" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_iyf1w")
+hframes = 5

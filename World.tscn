@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://cfu2obutsxpjy"]
+[gd_scene load_steps=4 format=3 uid="uid://cfu2obutsxpjy"]
 
 [ext_resource type="PackedScene" uid="uid://dal2smv6vjjad" path="res://Spawn_World.tscn" id="1_jw1k0"]
+[ext_resource type="PackedScene" uid="uid://hfe1bw0n7ina" path="res://Coins/coin.tscn" id="2_vunbh"]
 [ext_resource type="PackedScene" uid="uid://cooxas2d1guhx" path="res://Player/player.tscn" id="3_7jy08"]
 
 [node name="World" type="Node"]
@@ -18,6 +19,9 @@ layer_3/tile_data = PackedInt32Array(983013, 1376258, 36, 1048549, 1376258, 35, 
 layer_4/name = "Layer4"
 layer_4/tile_data = PackedInt32Array(-5, 393224, 14, 65531, 393224, 15, -4, 458760, 14, 65532, 458760, 15, -458752, 393224, 10, -393216, 393224, 11, -458751, 458760, 10, -393215, 458760, 11, -1507328, 917512, 18, -1507327, 983048, 18)
 
+[node name="Coin" parent="." instance=ExtResource("2_vunbh")]
+position = Vector2(-330, -36)
+
 [node name="Player" parent="." instance=ExtResource("3_7jy08")]
-position = Vector2(0, 1)
+position = Vector2(0, 0)
 collision_mask = 16
