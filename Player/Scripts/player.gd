@@ -2,7 +2,7 @@ class_name Player extends CharacterBody2D
 
 var cardinal_direction : Vector2 = Vector2.DOWN
 var direction : Vector2 = Vector2.ZERO
-
+var coins = 0  # Anzahl der Münzen, die der Spieler hats = 0
 
 @onready var animation_player : AnimationPlayer = $AnimationPlayer
 @onready var sprite : Sprite2D = $Sprite2D
@@ -19,7 +19,10 @@ func _process(delta):
 	pass
 
 
-
+# Diese Funktion wird aufgerufen, um eine Münze zu sammeln
+func add_coin(value: int):
+	coins += value  # Münzen zählen
+	print("Coins: ", coins)  # Zeigt die Anzahl der Münzen an
 
 func _physics_process(delta):
 	move_and_slide()
