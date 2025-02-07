@@ -22,6 +22,15 @@ layer_4/tile_data = PackedInt32Array(-5, 393224, 14, 65531, 393224, 15, -4, 4587
 [node name="Coin" parent="." instance=ExtResource("2_vunbh")]
 position = Vector2(-330, -36)
 
+[node name="Coin2" parent="." instance=ExtResource("2_vunbh")]
+position = Vector2(253, 342)
+
+[node name="Coin3" parent="." instance=ExtResource("2_vunbh")]
+position = Vector2(382, -20)
+
+[node name="Coin4" parent="." instance=ExtResource("2_vunbh")]
+position = Vector2(-240, 351)
+
 [node name="Player" parent="." instance=ExtResource("3_7jy08")]
-position = Vector2(-34, -7)
+position = Vector2(0, 0)
 collision_mask = 16
