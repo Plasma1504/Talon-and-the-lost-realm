@@ -1,27 +1,28 @@
 extends Area2D
 
-@export var dialogue_text : Array[String] = ["Hallo! Wie geht's dir?", "Schöner Tag heute, oder?", "Pass auf dich auf!"]
-var in_interaction_range = false
-var current_line = 0
+var player_in_range = false
+@onready var dialog_box = get_node("/root/World/DialogBox")  # Pfad zur DialogBox
 
-@onready var dialogue_box = get_tree().get_first_node_in_group("dialogue_box") # Dein UI-Textfeld
+# Unterschiedliche Texte für NPCs
+var npc_dialogs = [
+	"Hallo, Reisender!",
+	"Schönes Wetter heute, oder?",
+	"Ich hoffe, du hast genug Gold!",
+	"Achte auf Monster in den Wäldern!"
+]
 
 func _ready():
-	connect("body_entered", _on_body_entered)
-	connect("body_exited", _on_body_exited)
+	body_entered.connect(_on_body_entered)
+	body_exited.connect(_on_body_exited)
 
 func _on_body_entered(body):
-	if body.is_in_group("player"):
-		in_interaction_range = true
+	if body.name == "Player":
+		player_in_range = true
 
 func _on_body_exited(body):
-	if body.is_in_group("player"):
-		in_interaction_range = false
+	if body.name == "Player":
+		player_in_range = false
 
 func _input(event):
-	if event.is_action_pressed("interact") and in_interaction_range:
-		show_dialogue()
-
-func show_dialogue():
-	if dialogue_box != null:
-		dialogue_box.show_text(dialogue_text)
+	if event.is_action_pressed("interact") and player_in_range:
+		dialog_box.show_dialog(npc_dialogs)  # Dialog öffnen

@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=3 uid="uid://cdaa7n7ik4xrh"]
+
+[ext_resource type="Script" path="res://dialog_box.gd" id="1_r4j02"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1qhif"]
+bg_color = Color(0.381044, 0.653107, 0.671052, 1)
+
+[node name="DialogBox" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_r4j02")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 300.0
+offset_bottom = 100.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_1qhif")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+layout_mode = 0
+offset_right = 14.0
+offset_bottom = 23.0
+alignment = 1
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "..."
+horizontal_alignment = 1
+vertical_alignment = 1

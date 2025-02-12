@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://cfu2obutsxpjy"]
+[gd_scene load_steps=6 format=3 uid="uid://cfu2obutsxpjy"]
 
 [ext_resource type="PackedScene" uid="uid://dal2smv6vjjad" path="res://Spawn_World.tscn" id="1_jw1k0"]
 [ext_resource type="PackedScene" uid="uid://hfe1bw0n7ina" path="res://Coins/coin.tscn" id="2_vunbh"]
 [ext_resource type="PackedScene" uid="uid://cooxas2d1guhx" path="res://Player/player.tscn" id="3_7jy08"]
 [ext_resource type="PackedScene" uid="uid://pmy3k12psbw6" path="res://npcs/npc.tscn" id="3_iht7r"]
+[ext_resource type="PackedScene" uid="uid://cdaa7n7ik4xrh" path="res://npcs/dialog_box.tscn" id="5_vnbbv"]
 
 [node name="World" type="Node"]
 
@@ -35,6 +36,18 @@ position = Vector2(-240, 351)
 [node name="NPC" parent="." instance=ExtResource("3_iht7r")]
 position = Vector2(-146, -344)
 
-[node name="Player" parent="." instance=ExtResource("3_7jy08")]
-position = Vector2(0, 0)
+[node name="NPC2" parent="." instance=ExtResource("3_iht7r")]
+position = Vector2(-114, -344)
+
+[node name="Player" parent="." groups=["player"] instance=ExtResource("3_7jy08")]
+position = Vector2(0, -25)
 collision_mask = 16
+
+[node name="DialogBox" parent="." instance=ExtResource("5_vnbbv")]
+anchors_preset = 0
+anchor_top = 0.0
+anchor_bottom = 0.0
+offset_top = 0.0
+offset_right = 235.0
+offset_bottom = 50.0
+grow_vertical = 1
