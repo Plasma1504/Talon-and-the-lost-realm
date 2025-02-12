@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://cfu2obutsxpjy"]
+[gd_scene load_steps=5 format=3 uid="uid://cfu2obutsxpjy"]
 
 [ext_resource type="PackedScene" uid="uid://dal2smv6vjjad" path="res://Spawn_World.tscn" id="1_jw1k0"]
 [ext_resource type="PackedScene" uid="uid://hfe1bw0n7ina" path="res://Coins/coin.tscn" id="2_vunbh"]
 [ext_resource type="PackedScene" uid="uid://cooxas2d1guhx" path="res://Player/player.tscn" id="3_7jy08"]
+[ext_resource type="PackedScene" uid="uid://pmy3k12psbw6" path="res://npcs/npc.tscn" id="3_iht7r"]
 
 [node name="World" type="Node"]
 
@@ -30,6 +31,9 @@ position = Vector2(382, -20)
 
 [node name="Coin4" parent="." instance=ExtResource("2_vunbh")]
 position = Vector2(-240, 351)
+
+[node name="NPC" parent="." instance=ExtResource("3_iht7r")]
+position = Vector2(-146, -344)
 
 [node name="Player" parent="." instance=ExtResource("3_7jy08")]
 position = Vector2(0, 0)
