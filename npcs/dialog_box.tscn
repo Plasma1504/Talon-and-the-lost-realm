@@ -3,19 +3,23 @@
 [ext_resource type="Script" path="res://dialog_box.gd" id="1_r4j02"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1qhif"]
-bg_color = Color(0.381044, 0.653107, 0.671052, 1)
+bg_color = Color(0.699548, 0.854387, 0.844918, 0.784314)
 
 [node name="DialogBox" type="Control"]
 layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("1_r4j02")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 0
-offset_right = 300.0
-offset_bottom = 100.0
+offset_left = -151.0
+offset_top = -83.0
+offset_right = 149.0
+offset_bottom = 17.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_1qhif")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Panel"]

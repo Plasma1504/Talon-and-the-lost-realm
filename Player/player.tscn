@@ -339,7 +339,7 @@ libraries = {
 "": SubResource("AnimationLibrary_ynvxf")
 }
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="Camera2D" type="Camera2D" parent="." groups=["player_camera"]]
 zoom = Vector2(0.65, 0.65)
 
 [node name="StateMachine" type="Node" parent="."]
