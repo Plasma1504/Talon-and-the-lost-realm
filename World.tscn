@@ -44,7 +44,8 @@ position = Vector2(0, 0)
 collision_mask = 16
 
 [node name="DialogBox" parent="." instance=ExtResource("5_vnbbv")]
-offset_left = -150.0
-offset_top = 15.0
-offset_right = -150.0
-offset_bottom = 105.0
+visible = false
+offset_left = -128.0
+offset_top = -51.0
+offset_right = -128.0
+offset_bottom = 39.0

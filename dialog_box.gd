@@ -1,7 +1,6 @@
 extends Control
 
 @onready var label = $Panel/VBoxContainer/Label
-@onready var close_button = $Panel/VBoxContainer/Button
 @onready var camera = get_tree().get_first_node_in_group("player_camera")
 
 # Liste mit möglichen Dialogen
