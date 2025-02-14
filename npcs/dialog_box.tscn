@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://cdaa7n7ik4xrh"]
 
-[ext_resource type="Script" path="res://dialog_box.gd" id="1_r4j02"]
+[ext_resource type="Script" path="res://npcs/dialog_box.gd" id="1_r4j02"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1qhif"]
 bg_color = Color(0.699548, 0.854387, 0.844918, 0.784314)
@@ -43,9 +43,11 @@ grow_vertical = 2
 alignment = 1
 
 [node name="Label" type="Label" parent="Panel/VBoxContainer"]
+custom_minimum_size = Vector2(260, 180)
 layout_mode = 2
 size_flags_vertical = 1
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "..."
 horizontal_alignment = 1
 vertical_alignment = 1
+autowrap_mode = 2

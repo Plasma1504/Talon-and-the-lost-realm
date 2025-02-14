@@ -7,7 +7,10 @@ extends Control
 var npc_texts = []
 
 func _ready():
-	visible = false  # Dialog ausblenden
+	label.autowrap_mode = TextServer.AUTOWRAP_WORD  # Automatischer Umbruch nach Wörtern
+	visible = false
+
+	
 
 func show_dialog(texts: Array):
 	npc_texts = texts
