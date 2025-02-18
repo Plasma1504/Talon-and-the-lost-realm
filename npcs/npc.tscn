@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://pmy3k12psbw6"]
+
+[ext_resource type="Texture2D" uid="uid://cunfym5ct10cb" path="res://npcs/Knight_test.png" id="1_3t7v1"]
+[ext_resource type="Script" path="res://npcs/npc.gd" id="1_3y6hc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xfhr7"]
+size = Vector2(30.5547, 43.8125)
+
+[node name="NPC" type="Node2D"]
+
+[node name="InteractionZone" type="Area2D" parent="."]
+script = ExtResource("1_3y6hc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionZone"]
+position = Vector2(0, 7)
+shape = SubResource("RectangleShape2D_xfhr7")
+
+[node name="Sprite2D" type="Sprite2D" parent="InteractionZone"]
+position = Vector2(0.5, -0.499998)
+scale = Vector2(1.0625, 1.10714)
+texture = ExtResource("1_3t7v1")
